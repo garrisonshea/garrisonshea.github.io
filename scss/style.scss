@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,800|Permanent+Marker');
+
+$main-font: 'Nunito', sans-serif;
+$marker: 'Permanent Marker', cursive;
+
+$blue: #011c40;
+$dark-green: #093a40;
+$light-green: #73a64e;
+$orange: #d97925;
+$red: #d94814;
+$white: #f2f2f2;
+$black: #182126;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  background: $blue;
+}
+
+.marker {
+  font-family: $marker;
+}
+
+.container-fluid, #welcome {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto -40vh;
+  
+  
+  h1#welcome-message {
+    font-weight: bold;
+    color: $red;
+    font-size: 5em;
+    width: 80%;
+    margin: 40vh auto 0;
+  }
+  
+  p {
+    font-family: $marker;
+    font-size: 2.5em;
+    color: $orange;
+  }
+}
+
+
+#projects {
+  min-height: 100vh;
+  width: 100%;
+  background: $white;
+  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
+  margin: 0;
+  padding: 5vh 0 10vh;
+  
+  #project-wrapper {
+
+    width: 90%;
+    min-height: 90vh;
+  }
+  
+  h1 {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: $blue;
+  }
+  
+  #label {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 8vh;
+    
+    .java, .react {
+      font-family: $marker;
+    }
+    
+    .java {
+      color: $dark-green;
+    }
+    
+    .react {
+      color: $red;
+    }
+  }
+  .java-project {
+    height: 265px;
+    width: 70%;
+    background: $blue;
+    margin: 0 auto;
+    padding: 100px 0 0;
+    border-radius: 5px;
+    
+    p {
+      color: $light-green;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    
+    p.marker {
+      color: $orange;
+      font-size: 1.2em;
+    }
+  }
+  
+  a:hover {
+    color: $red;
+  }
+  
+}
+
+footer {
+  min-height: 20vh;
+  padding: 50px 0 0;
+  font-size: 4em;
+  
+  
+  a {color: $red;}
+  a:hover {
+    color: $orange;
+  }
+}
